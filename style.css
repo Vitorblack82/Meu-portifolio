@@ -1,0 +1,234 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  /* background: #f0f0f0;*/
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+
+}
+
+header {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+section {
+  padding: 2rem;
+  margin: auto;
+  max-width: 960px;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.projeto {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  color: black;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.projeto a:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+a.botao {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a.botao:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .projetos {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.contato {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+  color: black;
+}
+
+.contato h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.contato p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contato-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.link-contato {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.link-contato:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animação de entrada */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#toggle-theme {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+:root {
+  --bg: #f0f0f0;
+  --text: #111;
+  --card: #fff;
+}
+
+.dark-mode {
+  --bg: #111;
+  --text: #f0f0f0;
+  --card: #222;
+}
+
+.img-css {
+  width: 40px;
+ 
+ 
+
+}
+
+.text-header {
+  font-size: 20px;
+}
+
+.my-text {
+  font-size: 30px;
+}
+
+.meus-projetos {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.my-description {
+  font-size: 20px;
+}
+.link-contato {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.link-contato:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.link-contato:active {
+  transform: scale(0.97);
+}
+
+/* Se quiser separar botões e links visualmente */
+.copiar-email {
+  background-color: #28a745;
+}
+
+.copiar-email:hover {
+  background-color: #1e7e34;
+}
